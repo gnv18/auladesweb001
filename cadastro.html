@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Escudo Tartaruga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+        <h1>Instituto Escudo Tartaruga</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="projeto.html">Projeto</a></li>  
+                <li><a href="cadastro.html">Cadastro</a></li>     
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section class="cadastro-header">
+            <h2>Junte-se ao Escudo Tartaruga!</h2>
+            <p>Seja um voluntário e faça a diferença na vida marinha. Preencha o formulário abaixo para iniciar sua jornada de conservação.</p>
+        </section>
+
+        <section class="form-container">
+            <form action="#" method="POST" class="formulario-voluntario">
+                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="form-grupo">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="telefone">Telefone (WhatsApp):</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Interesse e Área de Atuação</legend>
+                    <div class="form-grupo">
+                        <label for="area">Principal Área de Interesse:</label>
+                        <select id="area" name="area" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="resgate">Resgate e Reabilitação</option>
+                            <option value="pesquisa">Pesquisa e Monitoramento</option>
+                            <option value="educacao">Educação Ambiental</option>
+                            <option value="administrativo">Administrativo e Mídias Sociais</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="disponibilidade">Disponibilidade (Horas/Semana):</label>
+                        <input type="number" id="disponibilidade" name="disponibilidade" min="1" max="40" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="mensagem">Por que você quer ser voluntário?</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-grupo checkbox">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Eu li e aceito os termos de voluntariado do Instituto Escudo Tartaruga.</label>
+                </div>
+
+                <button type="submit" class="botao-enviar">Enviar Cadastro</button>
+            </form>
+        </section>
+
+    </main> 
+   <footer>
+        <p>&copy; 2025 Instituto Escudo Tartaruga</p>
+    </footer>   
+    <script src="script.js"></script>
+</body>
+</html>
